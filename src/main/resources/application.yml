@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: langgraph-demo
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 0.7
+  mvc:
+    async:
+      request-timeout: 120000
+
+server:
+  port: 8080
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
